@@ -1,0 +1,44 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class controller.ElementoMenuController
+class controller.ReciboController
+class controller.RestauranteController
+class entity.Comida
+class entity.ElementoMenu
+class entity.Recibo
+class entity.Restaurante
+class java.awt.event.ItemEvent
+class javax.swing.JFrame
+class javax.swing.JOptionPane
+class javax.swing.UIManager
+class javax.swing.UnsupportedLookAndFeelException
+class javax.swing.table.DefaultTableModel
+class view.ComidaView
+class view.CuentaView
+class view.LogueoPrincipal
+view.ComidaView ..> java.lang.SuppressWarnings
+view.ComidaView ..> controller.ElementoMenuController
+view.ComidaView ..> controller.ReciboController
+view.ComidaView ..> controller.RestauranteController
+view.ComidaView ..> entity.Comida
+view.ComidaView ..> entity.ElementoMenu
+view.ComidaView ..> entity.Recibo
+view.ComidaView ..> entity.Restaurante
+view.ComidaView ..> java.awt.event.ItemEvent
+view.ComidaView --|> javax.swing.JFrame
+view.ComidaView ..> javax.swing.JOptionPane
+view.ComidaView ..> javax.swing.UIManager
+view.ComidaView ..> javax.swing.UnsupportedLookAndFeelException
+view.CuentaView ..> java.lang.SuppressWarnings
+view.CuentaView ..> controller.ReciboController
+view.CuentaView ..> entity.Recibo
+view.CuentaView --|> javax.swing.JFrame
+view.CuentaView ..> javax.swing.UIManager
+view.CuentaView ..> javax.swing.UnsupportedLookAndFeelException
+view.CuentaView ..> javax.swing.table.DefaultTableModel
+view.LogueoPrincipal ..> java.lang.SuppressWarnings
+view.LogueoPrincipal --|> javax.swing.JFrame
+view.LogueoPrincipal ..> javax.swing.JOptionPane
+view.LogueoPrincipal ..> javax.swing.UIManager
+view.LogueoPrincipal ..> javax.swing.UnsupportedLookAndFeelException
+@enduml
